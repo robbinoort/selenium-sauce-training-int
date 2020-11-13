@@ -15,11 +15,11 @@ public class loginStandard {
         String password = "DEFAULT";
         
         // 6. Zoekt en vult de username en wachtwoord in
-        driver.findElement(By.?("UnField")).sendKeys(username);
-        driver.findElement(By.?("PwField")).sendKeys(password);
+        //driver.findElement(By.?("UnField")).sendKeys(username);
+        //driver.findElement(By.?("PwField")).sendKeys(password);
         
         // 7. Drukt op de login button
-        driver.findElement(By.?("findthebutton")).click();
+        //driver.findElement(By.?("findthebutton")).click();
 
         System.out.println("  ");
         System.out.println("Logged in as ___ user");

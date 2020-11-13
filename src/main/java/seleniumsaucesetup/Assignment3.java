@@ -7,17 +7,27 @@
 package seleniumsaucesetup;
 
 // 1. Imports the Selenium Webdriver & Firefox driver
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 // Defines the class
-public class Assignment2 {
+public class Assignment3 {
 
     // Main method
     public static void main(String[] args) {
 
-    // *Try to find out for yourself how to start assigment 2 :-)
-    // * tip: check assignment 1
+
+        WebDriver driver = new FirefoxDriver();
+
+        driver.get("https://www.saucedemo.com/");
+
+        // *Define methods in new files - these can clean up your project a lot
+        seleniumsauce.loginStandard.StandardUser(driver);
+        //seleniumsauce.addItemToChart.AddBackpack(driver);
+
+        driver.close();
+
     }
     
 }

@@ -7,7 +7,9 @@
 package seleniumsaucesetup;
 
 // 1. Imports the Selenium Webdriver & Firefox driver
-
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 // Defines the class
 public class Assignment1b {
@@ -16,15 +18,15 @@ public class Assignment1b {
     public static void main(String[] args) {
 
         // 2. Initiates the driver
-                
+            WebDriver driver = new FirefoxDriver();
         
         // 9. Opens the browser with URL: https://www.saucedemo.com/ and logs in as standard user
-        
+            driver.get("https://www.google.com");
 
         //10. Verify if the title “Swag Labs” is displayed correctly
             //* tip: are you displaying the title or testing the title?
         if (driver.getTitle().equals("Qquest")){
-            System.out.println("Yes");
+           System.out.println("Yes");
         } else {
             System.out.println("No " + driver.getTitle() );
         }
@@ -33,12 +35,12 @@ public class Assignment1b {
         
 
         //12. Verify if the price is correct
-        if (driver.findElement("Element definition"))
-                .pickTheRightCommand().contains("value")){
-            
-        } else {
-            
-        }
+        //if (driver.findElement("Element definition"))
+        //        .pickTheRightCommand().contains("value")){
+        //
+        //} else {
+        //
+        //}
 
         //13. Add the item to your cart
         
